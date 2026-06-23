@@ -8,6 +8,7 @@ Set Height 800
 Set Theme "Catppuccin Mocha"
 Set Padding 20
 Set TypingSpeed 45ms
+Set LoopOffset 60%
 
 Hide
 Type "export PATH=/tmp/demoenv/bin:$PATH && cd $(mktemp -d) && cp -r ~/oss-repos/schema-drift/examples . && clear" Enter
