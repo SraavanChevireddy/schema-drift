@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "schema-drift"
+version = "0.1.0"
+description = "Snapshot dataset schemas and detect breaking changes over time. Data contracts for teams without a catalog."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Sraavan Chevireddy" }]
+keywords = ["schema", "data-contracts", "data-engineering", "drift", "cli", "data-quality"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Database",
+]
+
+[project.scripts]
+schema-drift = "schemadrift.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/SraavanChevireddy/schema-drift"
+
+[tool.setuptools.packages.find]
+include = ["schemadrift*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
