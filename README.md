@@ -6,6 +6,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
 
+![schema-drift in action](demo/demo.gif)
+
 A producer renames a column or changes a type, and three teams downstream break at 2am. The data was "valid" — it just wasn't the *shape* anyone agreed on. **schema-drift** turns that implicit agreement into an enforced contract: snapshot the schema you expect, and check every new batch against it.
 
 ## What counts as breaking?
